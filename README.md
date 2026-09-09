@@ -1,4 +1,4 @@
-# Manish Y M — Manga Portfolio
+# Manish Y M - Manga Portfolio
 
 One Piece–inspired **grayscale manga portfolio** built with React + Vite + TypeScript.
 

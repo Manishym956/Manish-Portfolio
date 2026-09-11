@@ -18,9 +18,6 @@ export default function Battles() {
             </div>
             <h3 className="battle-card__title">{battle.title}</h3>
             <p className="battle-card__excerpt">{battle.excerpt}</p>
-            <button type="button" className="btn-manga outline battle-card__btn">
-              Read More
-            </button>
           </article>
         ))}
       </div>

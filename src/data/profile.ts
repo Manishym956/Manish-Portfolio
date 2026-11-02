@@ -4,17 +4,18 @@ export const profile = {
   title: 'Full-Stack Developer & AI/ML Engineer',
   bounty: '3,000,000,000',
   wantedPoster: '/wanted-poster.jpg',
-  resume: '/ManishYM-Resume.pdf',
+  resume: '/Manish-Resumee.pdf',
+  email: 'manishym946@gmail.com',
   intro:
     'A CS engineer sailing the Grand Line of code — building AI systems, full-stack apps, and real-time data pipelines that scale.',
   summary:
-    'Computer Science student at Polaris School of Technology specializing in AI/ML, full-stack development, and data systems. Experienced in scalable dashboards, real-time pipelines, and production-grade AI solutions across internships at AutoMeta.ai and IndiaWantsToKnow.',
+    'B.Tech AI & ML student at Polaris School of Technology working across machine learning, LLM agents, and full-stack data systems. Built n8n automation, anomaly detection, and React monitoring dashboards at AutoMeta.ai, and LLM content agents at IndiaWantsToKnow. Currently researching multimodal satellite change detection.',
   journalEntry:
     'Day 847 on the dev seas. Built agentic infrastructure, automated quiz pipelines, and enterprise data connectors. Still chasing the One Piece of clean, scalable code.',
   links: {
     github: 'https://github.com/Manishym956',
     linkedin: 'https://www.linkedin.com/in/manish-y-m-233496326/',
-    portfolio: 'https://portfolio-lake-eta-58.vercel.app',
+    portfolio: 'https://manishymportfolio.vercel.app',
     leetcode: 'https://leetcode.com/u/Manishym956/',
     codechef: 'https://www.codechef.com/users/Manishym956',
     codeforces: 'https://codeforces.com/profile/Manishym956',
@@ -52,6 +53,7 @@ export const navLinks = [
   { id: 'repositories', label: 'The Repositories' },
   { id: 'adventures', label: 'Adventures' },
   { id: 'battles', label: 'Battles' },
+  { id: 'trophies', label: 'Trophies' },
   { id: 'final-spread', label: 'The Final Spread' },
 ]
 
@@ -95,11 +97,24 @@ export const specialists = [
 
 export const flagshipProjects = [
   {
+    codename: 'SAT-CHANGE',
+    subtitle: 'Research Paper · Multimodal Satellite Change Detection',
+    status: 'Research in progress' as string | null,
+    description:
+      'Urban change detection from Sentinel-1 SAR and Sentinel-2 optical imagery on the OSCD benchmark, focused on the case where the post-change optical image is missing or cloudy. Compares DS-UNet against SAR-only, optical-only and fusion U-Nets with pre-registered experiments over 10 seeds.',
+    tech: ['Python', 'PyTorch', 'DS-UNet', 'Sentinel-1/2', 'Google Earth Engine'],
+    url: 'https://github.com/Manishym956/Multimodal-Satellite-Change-Detection-for-Urban-Development-and-Environmental-Monitoring',
+    homepage: null as string | null,
+    chartLabel: null as string | null,
+    chartData: null as number[] | null,
+    nodes: ['SAR (S1)', 'Optical (S2)', 'DS-UNet', 'Change Map'] as string[] | null,
+  },
+  {
     codename: 'FLOWSYNC',
     subtitle: 'Enterprise Data Integration',
     description:
-      'Distributed platform synchronizing REST APIs, FHIR healthcare systems, and messaging services through asynchronous BullMQ workers with idempotency and fault tolerance.',
-    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Redis', 'Docker'],
+      'Distributed platform synchronizing REST APIs, FHIR healthcare systems, and messaging services through fault-tolerant BullMQ workers with retries, idempotency guarantees, automated tests and CI/CD.',
+    tech: ['Next.js', 'Node.js', 'TypeScript', 'PostgreSQL', 'Redis', 'BullMQ', 'Docker'],
     url: 'https://github.com/Manishym956/FlowSync',
     homepage: null as string | null,
     chartLabel: 'Pipeline Throughput',
@@ -110,13 +125,25 @@ export const flagshipProjects = [
     codename: 'RETENTIONBRAIN',
     subtitle: 'Customer Churn Prediction',
     description:
-      'ML pipeline for customer churn prediction with EDA, feature engineering, and optimized Logistic Regression & XGBoost models achieving strong ROC-AUC performance.',
-    tech: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'Matplotlib', 'Seaborn'],
+      'Churn prediction on customer transaction data with EDA and RFM-based feature engineering, Logistic Regression & XGBoost classifiers evaluated on ROC-AUC, and SHAP analysis to surface the behaviours that drive churn.',
+    tech: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'SHAP', 'Matplotlib'],
     url: 'https://github.com/Manishym956/RetentionBrain',
     homepage: 'https://retention-brain.vercel.app',
     chartLabel: 'ROC-AUC Score',
     chartData: [0.72, 0.78, 0.84, 0.87, 0.89, 0.91, 0.93, 0.94] as number[],
     nodes: null as string[] | null,
+  },
+  {
+    codename: 'WHOLESALE-SEGMENTS',
+    subtitle: 'Customer Segmentation',
+    description:
+      'Wholesale purchasing data cleaned, explored and scaled, then clustered with K-Means; cluster quality checked with the Elbow Method and Silhouette Score to find distinct customer segments.',
+    tech: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'Seaborn'],
+    url: 'https://github.com/Manishym956/Wholesale-Customers_k-Means-Segmentation',
+    homepage: null as string | null,
+    chartLabel: null as string | null,
+    chartData: null as number[] | null,
+    nodes: ['Clean', 'Scale', 'K-Means', 'Silhouette', 'Segments'],
   },
   {
     codename: 'CRISISLENS',
@@ -180,6 +207,32 @@ export const battles = [
   },
 ]
 
+export const achievements = [
+  {
+    rank: '1st Place',
+    title: 'Innovate4Impact, E-Summit ’26',
+    detail:
+      'Secured first place in the Bangalore Zonal competition at Indraprastha Institute of Information Technology, Delhi, with an innovative technology solution.',
+  },
+  {
+    rank: '3rd Place',
+    title: 'PolarisGP',
+    detail:
+      'Designed, built, and tested a high-performance Tarmo5 RC car as part of a competitive engineering program.',
+  },
+  {
+    rank: 'Facilitator',
+    title: 'Google Cloud Arcade',
+    detail:
+      'Selected for the facilitator program; earned the Google Cloud Computing Foundations and Implement Load Balancing on Compute Engine skill badges.',
+  },
+  {
+    rank: 'Participant',
+    title: 'Bharatiya Antariksh Hackathon 2026',
+    detail: 'Competed in the ISRO-organized hackathon focused on space technology and innovation.',
+  },
+]
+
 export const experience = [
   {
     role: 'Founding Tech Intern',
@@ -189,13 +242,13 @@ export const experience = [
   {
     role: 'AI Automation Intern',
     company: 'IndiaWantsToKnow',
-    period: 'Jun 2026',
+    period: 'Jun – Jul 2026',
   },
 ]
 
 export const education = {
-  degree: 'B.Tech Computer Science & Engineering',
+  degree: 'B.Tech — Artificial Intelligence & Machine Learning',
   school: 'Polaris School of Technology, Bengaluru',
-  period: '2024 – 2028',
+  period: 'Aug 2024 – Jun 2028',
   grade: '7.8 CGPA',
 }

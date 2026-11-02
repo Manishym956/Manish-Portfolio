@@ -665,6 +665,12 @@ a {
   padding: 0.15rem 0.5rem;
 }
 
+.trophies__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
 .battle-card__title {
   font-family: var(--font-display);
   font-size: 1.1rem;
@@ -690,6 +696,36 @@ a {
   gap: 1.5rem;
 }
 
+.final-spread__grid > * {
+  min-width: 0;
+}
+
+.recruit-form textarea {
+  resize: vertical;
+}
+
+.recruit-form__honey {
+  display: none;
+}
+
+.recruit-form__note {
+  font-size: 0.85rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.adventure-card__status {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  background: var(--black);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .recruit-form {
   display: flex;
   flex-direction: column;
@@ -709,6 +745,8 @@ a {
 
 .recruit-form input,
 .recruit-form textarea {
+  width: 100%;
+  min-width: 0;
   font: inherit;
   padding: 0.6rem 0.75rem;
   border: 2px solid var(--black);
@@ -723,6 +761,8 @@ a {
 .shipping-list li {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
   padding: 0.5rem 0;
   border-bottom: 1px dashed var(--gray-mid);
   font-size: 0.9rem;
@@ -730,6 +770,7 @@ a {
 
 .shipping-list a {
   font-weight: 700;
+  overflow-wrap: anywhere;
   text-decoration: underline;
 }
 
@@ -831,6 +872,7 @@ a {
   .repo-spread__canvas,
   .adventure-card,
   .battles__grid,
+  .trophies__grid,
   .final-spread__grid {
     grid-template-columns: 1fr;
   }
@@ -850,7 +892,7 @@ a {
 
   .navbar__nav {
     order: 3;
-    width: 100%;
+    flex: 1 1 100%;
     justify-content: flex-start;
   }
 
@@ -865,6 +907,30 @@ a {
 }
 
 @media (max-width: 600px) {
+  .navbar__utility > span {
+    display: none;
+  }
+
+  .navbar__utility {
+    justify-content: flex-end;
+  }
+
+  .navbar__main {
+    padding: 0.5rem 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .navbar__nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .navbar__link {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .prologue__story {
     grid-template-columns: 1fr;
   }
@@ -876,5 +942,24 @@ a {
 
   .chapter__header {
     flex-wrap: wrap;
+  }
+
+  .chapter__title {
+    flex-basis: 100%;
+    order: 1;
+  }
+
+  .final-spread__recruit,
+  .shipping-box {
+    padding: 1rem;
+    box-shadow: 4px 4px 0 var(--black);
+  }
+
+  .final-spread__dramatic {
+    padding: 1.25rem;
+  }
+
+  .final-spread__real {
+    font-size: 2rem;
   }
 }

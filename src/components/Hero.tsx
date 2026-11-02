@@ -47,7 +47,7 @@ export default function Hero() {
         <a href="#final-spread" className="btn-manga">
           Get In Touch
         </a>
-        <a href={profile.resume} download="ManishYM-Resume.pdf" className="btn-manga outline">
+        <a href={profile.resume} download="Manish-YM-Resume.pdf" className="btn-manga outline">
           Download CV
         </a>
       </div>

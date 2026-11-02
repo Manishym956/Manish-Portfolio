@@ -58,6 +58,7 @@ export default function Adventures() {
               <h3>
                 {project.codename} <span>// {project.subtitle}</span>
               </h3>
+              {project.status && <p className="adventure-card__status">⚠ {project.status}</p>}
               <div className="speech-bubble speech-bubble--small">
                 <p>{project.description}</p>
               </div>
